@@ -269,8 +269,33 @@ function autoResizeTextarea() {
 
 // Scroll al final del chat
 function scrollToBottom() {
+    const chatContainer = document.querySelector(".chat-container");
     setTimeout(() => {
-        chatMessages.scrollTop = chatMessages.scrollHeight;
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    }, 100);
+}
+function scrollToBottom() {
+    const chatContainer = document.querySelector(".chat-container");
+    setTimeout(() => {
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    }, 100);
+}
+function scrollToBottom() {
+    const chatContainer = document.querySelector(".chat-container");
+    setTimeout(() => {
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    }, 100);
+}
+function scrollToBottom() {
+    const chatContainer = document.querySelector(".chat-container");
+    setTimeout(() => {
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+    }, 100);
+}
+function scrollToBottom() {
+    const chatContainer = document.querySelector(".chat-container");
+    setTimeout(() => {
+        chatContainer.scrollTop = chatContainer.scrollHeight;
     }, 100);
 }
 
