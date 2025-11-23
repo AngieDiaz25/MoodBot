@@ -361,5 +361,4 @@ document.head.appendChild(style);
 // Log de inicio
 console.log('MoodBot inicializado - Versión Profesional');
 console.log('API URL:', API_URL);
-console.log('Versión: 1.0.0');
-``` 
+console.log('Versión: 1.0.0'); 
