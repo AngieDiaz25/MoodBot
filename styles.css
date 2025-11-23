@@ -1,5 +1,6 @@
 /* Variables CSS - Tema Profesional */
 :root {
+    
     /* Colores principales - Azules corporativos */
     --primary-color: #b7584f;
     --primary-hover: #9d4a42;
@@ -31,6 +32,10 @@
     --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+    html, body {
+    height: 100%;
+}
+
 /* Reset y estilos base */
 * {
     margin: 0;
@@ -49,7 +54,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 }
 
 body::before {
