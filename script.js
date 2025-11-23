@@ -49,7 +49,7 @@ async function checkAPIHealth() {
     const statusText = document.getElementById('apiStatusText');
     
     try {
-        const response = await fetch(`${API_URL}/health`, {
+        const response = await fetch(`${API_URL}/health`, { 
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -111,7 +111,7 @@ async function sendMessage() {
 
     try {
         // Hacer petición a la API
-        const response = await fetch(`${API_URL}/predict`, {
+        const response = await fetch(`${API_URL}/predict`, { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
