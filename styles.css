@@ -391,6 +391,8 @@ body::before {
 
 /* Input Container */
 .input-container {
+    position: relative;
+    z-index: 100;
     padding: 20px 32px;
     background: white;
     border-top: 1px solid var(--input-border);
