@@ -120,8 +120,9 @@ min-height: 600px;
 .chat-container {
     min-height: 0;
     flex: 1;
-    overflow-y: scroll; /* Cambiar de auto a scroll para forzar scrollbar */
-    -webkit-overflow-scrolling: touch; /* Agregar para mejor soporte */
+    max-height: calc(90vh - 250px); /* Altura fija: 90vh menos header, input y footer */
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     padding: 24px 32px;
     display: flex;
     flex-direction: column;
