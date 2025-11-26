@@ -1,0 +1,159 @@
+
+======================================================================
+REPORTE DE ANÁLISIS EXPLORATORIO DE DATOS (EDA) - ACTUALIZADO
+MoodBot - Clasificador de Estados Emocionales
+Dataset con Textos Neutros Expandidos
+======================================================================
+
+FECHA: 2025-11-14 11:09:12
+
+NOTA: Este análisis usa el dataset con textos neutros expandidos
+      (de ~6 palabras a ~53 palabras promedio)
+
+======================================================================
+1. RESUMEN DEL DATASET
+======================================================================
+
+Total de muestras: 11313
+- Training set:   7919 (70.0%)
+- Validation set: 1697 (15.0%)
+- Test set:       1697 (15.0%)
+
+Distribución de Labels:
+label
+0    3771
+1    3771
+2    3771
+
+Balance del dataset: 1.00:1
+
+======================================================================
+2. ESTADÍSTICAS DE TEXTO POR CATEGORÍA
+======================================================================
+
+
+--- Neutro (Label 0) ---
+Muestras: 3771
+
+Longitud de texto (caracteres):
+  Media:   298.0
+  Mediana: 235.0
+  Mín:     23
+  Máx:     516
+
+Conteo de palabras:
+  Media:   52.7
+  Mediana: 44.0
+  Mín:     5
+  Máx:     98
+
+--- Ansiedad (Label 1) ---
+Muestras: 3771
+
+Longitud de texto (caracteres):
+  Media:   723.6
+  Mediana: 623.0
+  Mín:     67
+  Máx:     1992
+
+Conteo de palabras:
+  Media:   144.7
+  Mediana: 126.0
+  Mín:     15
+  Máx:     431
+
+--- Depresión (Label 2) ---
+Muestras: 3771
+
+Longitud de texto (caracteres):
+  Media:   673.9
+  Mediana: 584.0
+  Mín:     64
+  Máx:     1998
+
+Conteo de palabras:
+  Media:   135.3
+  Mediana: 116.0
+  Mín:     15
+  Máx:     419
+
+======================================================================
+3. TOP 10 PALABRAS MÁS FRECUENTES POR CATEGORÍA
+======================================================================
+
+
+--- Neutro ---
+ 1. it's           :  4242 veces
+ 2. i've           :  3044 veces
+ 3. like           :  1976 veces
+ 4. helps          :  1692 veces
+ 5. i'm            :  1549 veces
+ 6. when           :  1549 veces
+ 7. different      :  1412 veces
+ 8. about          :  1392 veces
+ 9. new            :  1344 veces
+10. enjoy          :  1337 veces
+
+--- Ansiedad ---
+ 1. just           :  4137 veces
+ 2. like           :  3924 veces
+ 3. not            :  2974 veces
+ 4. feel           :  2775 veces
+ 5. about          :  2561 veces
+ 6. anxiety        :  2388 veces
+ 7. get            :  2281 veces
+ 8. know           :  2151 veces
+ 9. all            :  2049 veces
+10. don            :  2039 veces
+
+--- Depresión ---
+ 1. just           :  4376 veces
+ 2. like           :  3463 veces
+ 3. feel           :  2929 veces
+ 4. not            :  2878 veces
+ 5. don            :  2322 veces
+ 6. all            :  2243 veces
+ 7. know           :  2090 veces
+ 8. want           :  2083 veces
+ 9. get            :  1978 veces
+10. what           :  1957 veces
+
+======================================================================
+4. VISUALIZACIONES GENERADAS
+======================================================================
+
+Se han generado las siguientes visualizaciones en /Users/angiediaz/Desktop/Proyecto ML/EDA_Results/:
+
+1. 01_distribucion_labels.png    - Distribución general de categorías
+2. 02_longitud_textos.png         - Análisis de longitud de textos
+3. 03_wordclouds.png              - Nubes de palabras por categoría
+4. 04_top_palabras.png            - Palabras más frecuentes
+5. 05_distribucion_splits.png     - Distribución por train/val/test
+6. 06_analisis_sentencias.png     - Análisis de sentencias
+
+======================================================================
+5. OBSERVACIONES Y CONCLUSIONES
+======================================================================
+
+Balance del Dataset:
+- El dataset está perfectamente balanceado
+- Ratio: 1.00:1
+
+Características de los Textos:
+- Longitud promedio: 565.1 caracteres
+- Palabras promedio: 110.9 palabras
+- Los textos son de longitud moderada
+
+Calidad del Dataset:
+✓ Dataset limpio y bien estructurado
+✓ Splits estratificados correctamente
+✓ Balance apropiado para entrenamiento
+
+Recomendaciones:
+→ Proceder con tokenización y lematización (16 nov)
+→ Considerar técnicas de vectorización (TF-IDF o embeddings)
+→ El dataset está listo para entrenamiento de modelos
+
+======================================================================
+FIN DEL REPORTE
+======================================================================
